@@ -1,0 +1,21 @@
+{
+  "name": "loganmcansh.com",
+  "alias": "loganmcansh.com",
+  "version": 2,
+  "routes": [
+    {
+      "src": "/",
+      "status": 301,
+      "headers": {
+        "Location": "https://mcan.sh"
+      }
+    },
+    {
+      "src": "/(.*)",
+      "status": 301,
+      "headers": {
+        "Location": "https://mcan.sh/$1"
+      }
+    }
+  ]
+}
